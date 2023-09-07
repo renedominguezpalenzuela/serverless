@@ -28,4 +28,11 @@ functions:
       - httpApi:
           path: /usuario
           method: POST
+  genPrimos:
+    handler: index.genPrimos
+    events:
+      - httpApi:
+          path: /genprimes/{N}
+          method: GET  
+  
 
