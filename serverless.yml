@@ -22,3 +22,10 @@ functions:
       - httpApi:
           path: /holamundo/{nombre}
           method: get
+  crearUsuario:
+    handler: index.crearUsuario
+    events:
+      - httpApi:
+          path: /usuario
+          method: POST
+
