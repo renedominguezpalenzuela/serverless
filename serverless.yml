@@ -20,5 +20,5 @@ functions:
     handler: index.holaMundo
     events:
       - httpApi:
-          path: /holamundo
+          path: /holamundo/{nombre}
           method: get
