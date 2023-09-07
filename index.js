@@ -3,7 +3,22 @@ module.exports.handler = async (event) => {
     statusCode: 200,
     body: JSON.stringify(
       {
-        message: "Go Serverless v3.0! Your function executed successfully!",
+        message: "Esto es un mensaje",
+        input: event,
+      },
+      null,
+      2
+    ),
+  };
+};
+
+
+module.exports.holaMundo = async (event) => {
+  return {
+    statusCode: 200,
+    body: JSON.stringify(
+      {
+        message: "Hola mundo",
         input: event,
       },
       null,

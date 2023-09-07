@@ -16,3 +16,9 @@ functions:
       - httpApi:
           path: /
           method: get
+  holaMundo:
+    handler: index.holaMundo
+    events:
+      - httpApi:
+          path: /holamundo
+          method: get
